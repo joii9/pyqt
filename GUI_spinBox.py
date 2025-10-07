@@ -13,9 +13,8 @@ class MainWindow(qtw.QWidget):
          self.setLayout(qtw.QVBoxLayout()) #If we want a Horizontal Layout we need to exchange QVBoxLayout to QHBoxLayout
 
          #Create a Label
-         #Change the font size of label. For that I need to import PyQt5.QtGui
          my_label = qtw.QLabel("Pick something from the list")
-         my_label.setFont(qtg.QFont("Helvetica", 18))
+         my_label.setFont(qtg.QFont("Helvetica", 18)) #Change the font size of label. For that I need to import PyQt5.QtGui
          self.layout().addWidget(my_label)
 
          #create an spin box
